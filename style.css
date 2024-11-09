@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 5vmax;
+    margin-bottom: 10px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 30vmax;
+    height: 30vmax; */
+    background-color: antiquewhite;
+}
+.game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5vmax;
+    width: 28vmax;
+    height: 28vmax;
+    background-color: #2196F3;
+}
+.box{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    width: 8vmax;
+    height: 8vmax;
+    font-size: 5vmax;
+    /* background-color: aquamarine; */
+    color: red;
+    border: none;
+    border-radius: 5%;
+}
+.winner{
+    color: yellow;
+    font-weight: bold;
+}
+.msg-container{
+    height: 20vmax;
+}
+#msg{
+    color: red;
+    font-size: 5vmax;
+}
+.hide{
+    display: none;
+}
+.reset-game{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    margin: 10px;
+    font-weight: 800;
+}
+.new-game{
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    margin: 10px;
+    font-weight: 800;
+}
+.reset-game:hover{
+    background-color: rgb(194, 71, 71);
+}
+.new-game:hover{
+    background-color: rgb(93, 195, 79);
+}
+@media only screen and (max-width:500px) {
+    .main{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .box{
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 0px;
+        width: 100%;
+        height: 100%;
+        font-size: 30px;
+        text-align: center;
+    }
+    .container{
+        width: 100vw;
+    }
+    .game{
+        display: grid;
+        width:fit-content;
+        min-height: 60vmax;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
+        background-color: #2196F3;
+        padding: 10px;
+    }
+}
