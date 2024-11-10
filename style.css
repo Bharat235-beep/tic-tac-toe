@@ -9,6 +9,7 @@ h1{
 }
 body{
     display: flex;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -103,8 +104,8 @@ body{
     }
     .game{
         display: grid;
-        width:fit-content;
-        min-height: fit-content;
+        width: auto;
+        height: auto;
         grid-template-columns: 100px 100px 100px;
         grid-template-rows: 100px 100px 100px;
         background-color: #2196F3;
